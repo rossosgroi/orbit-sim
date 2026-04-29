@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Logs
+logs/
+*.log
+
+# Testing
+.coverage/
+.coveragerc
+
+# Temporary files
+*.tmp
+*.temp
+
+# Data
+*.json
+*.csv
+*.txt
+
+# Visualization outputs
+plots/
+animations/
