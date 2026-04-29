@@ -1,5 +1,6 @@
 import sys
 import os
+import numpy as np
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
     QTabWidget, QPushButton, QLabel, QLineEdit, QComboBox, 
