@@ -3,7 +3,7 @@ import importlib
 import os
 from typing import Callable, Dict, List, Union, Optional
 import numpy as np
-from src.core.exceptions import ForceModelError
+from core.exceptions import ForceModelError
 
 
 class ForceModel:

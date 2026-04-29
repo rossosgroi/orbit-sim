@@ -271,20 +271,25 @@ class OrbitSimGUI(QMainWindow):
         
         # Visualization settings
         viz_group = QGroupBox("Visualization")
-        viz_layout = QVBoxLayout()
+        viz_layout = QGridLayout()
         
-        self.plotly_checkbox = QPushButton("Use Plotly for 3D Visualization")
+        # Use Plotly checkbox
+        self.plotly_checkbox = QPushButton("Use Plotly for 3D (Interactive)")
         self.plotly_checkbox.setCheckable(True)
         self.plotly_checkbox.setChecked(False)
-        viz_layout.addWidget(self.plotly_checkbox)
+        self.plotly_checkbox.setMinimumHeight(40)
+        viz_layout.addWidget(self.plotly_checkbox, 0, 0)
+        
+        # Info label
+        info_label = QLabel("Plotly provides interactive 3D visualizations.\nMatplotlib provides static 3D plots.")
+        info_label.setWordWrap(True)
+        viz_layout.addWidget(info_label, 1, 0)
         
         viz_group.setLayout(viz_layout)
         layout.addWidget(viz_group)
         
-        # Save settings button
-        self.save_settings_button = QPushButton("Save Settings")
-        self.save_settings_button.clicked.connect(self.save_settings)
-        layout.addWidget(self.save_settings_button)
+        # Add some stretch to push everything to the top
+        layout.addStretch()
         
         self.tab_widget.addTab(settings_tab, "Settings")
     

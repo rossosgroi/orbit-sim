@@ -1,6 +1,6 @@
 import numpy as np
 from typing import Callable, Union, List
-from src.core.exceptions import ForceModelError
+from core.exceptions import ForceModelError
 
 
 def two_body_derivative(mu: float) -> Callable[[float, Union[List[float], np.ndarray]], np.ndarray]:

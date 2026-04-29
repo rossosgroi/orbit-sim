@@ -1,6 +1,6 @@
 import numpy as np
 from typing import List, Callable, Tuple
-from src.core.bodies import CelestialBody
+from core.bodies import CelestialBody
 
 
 def multi_body_derivative(bodies: List[CelestialBody]):

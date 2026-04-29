@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 import numpy as np
-from src.core.bodies import CelestialBody
+from core.bodies import CelestialBody
 
 
 def plotly_3d_orbit(states, body: CelestialBody, title: str = "Orbit Visualization"):
