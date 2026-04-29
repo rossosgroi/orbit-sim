@@ -1,5 +1,5 @@
 import numpy as np
-from ..core.constants import DEG2RAD, RAD2DEG
+from core.constants import DEG2RAD, RAD2DEG
 from .elements import KeplerianElements
 
 def cartesian_to_keplerian(state, mu):

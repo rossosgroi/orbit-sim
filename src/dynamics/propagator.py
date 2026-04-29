@@ -1,7 +1,7 @@
 import numpy as np
 from typing import Callable, Union, List, Tuple
-from ..numerics.integrators import rk4_step, adaptive_rk45
-from src.core.exceptions import PropagatorError
+from numerics.integrators import rk4_step, adaptive_rk45
+from core.exceptions import PropagatorError
 
 class OrbitPropagator:
     """Orbit propagator with configurable force model and integrator"""

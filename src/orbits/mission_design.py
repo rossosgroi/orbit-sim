@@ -1,8 +1,8 @@
 import numpy as np
 from scipy.optimize import minimize, root
 from .lambert import lambert_solver as lambert_problem
-from ..core.bodies import CelestialBody
-from ..dynamics.two_body import two_body_energy
+from core.bodies import CelestialBody
+from dynamics.two_body import two_body_energy
 
 
 def hohmann_transfer(r1: float, r2: float, mu: float) -> tuple:

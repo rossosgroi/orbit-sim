@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-from ..core.bodies import EARTH
+from core.bodies import EARTH
 
 def plot_3d_orbit(states, body=EARTH, title="Orbit Visualization"):
     """

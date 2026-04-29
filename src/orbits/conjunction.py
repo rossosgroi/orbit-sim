@@ -1,6 +1,5 @@
 import numpy as np
 from typing import List, Tuple
-from ..core.state import State
 
 
 def calculate_minimum_distance(state1: np.ndarray, state2: np.ndarray, mu: float) -> Tuple[float, float]:
